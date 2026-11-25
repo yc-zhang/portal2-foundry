@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "foundry_button/hello_rex"
+    "$translucent" "1"
+    "$decal" "1"
+}

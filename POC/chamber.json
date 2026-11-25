@@ -1,0 +1,32 @@
+{
+  "materials": {
+    "black_panel": "metal/black_floor_metal_001b",
+    "white_tile": "tile/white_floor_tile002a"
+  },
+  "world": [
+    {"min": [-272,-208,-16], "max": [272,208,0], "material": "black_panel"},
+    {"min": [-272,-208,192], "max": [272,208,208], "material": "black_panel"},
+    {"min": [-272,-208,0], "max": [-256,208,192], "material": "white_tile"},
+    {"min": [256,-208,0], "max": [272,208,192], "material": "black_panel"},
+    {"min": [-256,-208,0], "max": [256,-192,192], "material": "black_panel"},
+    {"min": [-256,192,0], "max": [256,208,192], "material": "white_tile"},
+    {"min": [96,-192,0], "max": [112,-48,192], "material": "black_panel"},
+    {"min": [96,48,0], "max": [112,192,192], "material": "black_panel"},
+    {"min": [96,-48,112], "max": [112,48,192], "material": "black_panel"}
+  ],
+  "components": [
+    {"id": "spawn", "type": "spawn", "at": [-208,0,4]},
+    {"id": "room_light", "type": "light", "at": [-80,0,160], "light": "255 245 230 450"},
+    {"id": "exit_light", "type": "light", "at": [184,0,152], "light": "225 240 255 250"},
+    {"id": "cube", "type": "cube", "at": [-112,84,36]},
+    {"id": "plate", "type": "floor_button", "at": [-48,-72,8]},
+    {"id": "gate", "type": "lift_door", "min": [98,-48,0], "max": [110,48,112], "material": "white_tile"},
+    {"id": "exit_zone", "type": "finish_zone", "min": [188,-192,0], "max": [224,192,160]},
+    {"id": "pti", "type": "workshop_finish", "at": [-32,0,80]}
+  ],
+  "connections": [
+    {"from": "plate.pressed", "to": "gate.open"},
+    {"from": "plate.released", "to": "gate.close"},
+    {"from": "exit_zone.entered", "to": "pti.finish", "once": true}
+  ]
+}
