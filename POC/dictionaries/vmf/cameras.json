@@ -1,0 +1,26 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "activecamera": "-1"
+      }
+    },
+    "foundry_srctools.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "activecamera": "-1"
+      }
+    }
+  },
+  "fields": {
+    "activecamera": "当前视角；-1 表示没有选中",
+    "camera.look": "观察目标坐标",
+    "camera.position": "观察点"
+  },
+  "json_control": "默认无已保存视角。",
+  "purpose": "保存 Hammer 的观察视角；游戏镜头由实体控制。",
+  "section": "cameras"
+}

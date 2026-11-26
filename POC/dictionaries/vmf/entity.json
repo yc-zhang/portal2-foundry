@@ -1,0 +1,48 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "classnames": {
+        "env_cubemap": 1,
+        "env_tonemap_controller": 1,
+        "func_door": 1,
+        "func_instance": 1,
+        "info_overlay": 1,
+        "info_player_start": 1,
+        "light": 5,
+        "logic_auto": 1,
+        "logic_relay": 1,
+        "path_track": 1,
+        "prop_weighted_cube": 1,
+        "trigger_once": 1,
+        "weapon_portalgun": 1
+      },
+      "count": 17
+    },
+    "foundry_srctools.vmf": {
+      "classnames": {
+        "func_door": 1,
+        "func_instance": 1,
+        "info_player_start": 1,
+        "light": 2,
+        "prop_floor_button": 1,
+        "prop_weighted_cube": 1,
+        "trigger_once": 1
+      },
+      "count": 8
+    }
+  },
+  "fields": {
+    "angles": "朝向",
+    "classname": "Source 实体类，见 ../components.json",
+    "connections": "事件输出子块，见 ../connections.json",
+    "editor": "Hammer 编辑状态",
+    "file": "func_instance 的源 VMF",
+    "id": "实体编号",
+    "origin": "世界坐标",
+    "solid": "门、触发区等 brush 实体的几何",
+    "targetname": "I/O 可引用的名字"
+  },
+  "json_control": "components[] 选择预设并设置位置、边界等；connections[] 设置跨实体连线。",
+  "purpose": "每个实体一个区块。classname 决定实体行为、可用属性与 I/O。",
+  "section": "entity"
+}

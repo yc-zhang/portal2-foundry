@@ -1,0 +1,16 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "count": 0
+    },
+    "foundry_srctools.vmf": {
+      "count": 0
+    }
+  },
+  "fields": {
+    "entity": "隐藏实体的完整区块"
+  },
+  "json_control": "仅在对象被设为隐藏时出现；chamber.json 无此配置。",
+  "purpose": "在顶层包裹隐藏实体；world 或实体内部也能用 hidden 包裹隐藏 brush。",
+  "section": "hidden"
+}

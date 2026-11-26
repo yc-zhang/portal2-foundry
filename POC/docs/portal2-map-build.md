@@ -14,6 +14,8 @@ map foundry_button
 
 ## 用项目脚本编译
 
+在 POC 目录先执行一次 `py -3.12 -m venv .venv`，再执行 `.\.venv\Scripts\python.exe -m pip install -r requirements.txt`。构建脚本会使用这个环境分析运行时依赖。
+
 先在 Steam 库的工具分类中安装 **Portal 2 Authoring Tools**。本机游戏目录是 `C:\Program Files (x86)\Steam\steamapps\common\Portal 2`。其中 `bin` 提供 Hammer 和编译器，`portal2\gameinfo.txt` 定义游戏资源搜索路径，`sdk_content\maps\instances` 存放制作期复用的 VMF。
 
 ```powershell
@@ -55,6 +57,16 @@ Copy-Item -LiteralPath "$base.bsp" -Destination (Join-Path $game "maps\$($source
 `-game` 后面是含 `gameinfo.txt` 的子目录；最后一个参数是地图路径主干。若 VBSP 在项目目录或系统临时目录报告 `Can't create LogFile`，先按上例将 VMF 放入游戏 SDK 目录。在本机这一步解决了问题。若日志报告缺失 instance，检查 VMF 的 `file` 相对路径是否能在 `sdk_content\maps` 下找到对应文件。[Valve 问题记录](https://github.com/ValveSoftware/portal2/issues/430)
 
 ## 从描述生成 VMF
+
+### 成图后怎样收齐资源
+
+使用 `build-map.ps1` 时，VRAD 完成后会执行同目录的 `pack_map.py`。它从 BSP 的表面、贴花、静态模型及运行时实体收集资源，通过 srctools 的 PackList 分析材质、模型及其他可识别的引用。项目显式放入 `assets/<地图名>/` 的文件也参与分析。BSPZIP 更新地图内的 pakfile 后，脚本读回文件核对 SHA-256，通过后才复制成品和执行可选的安装步骤。
+
+SDK 构建目录中的 `<地图名>.dependencies.json` 记录识别到的每个路径、引用来源和处理结果。查不到已识别的必需路径会终止打包。stock 目前按原版主游戏、DLC1、DLC2、update 和 platform 的标准 pak01 VPK 路径判定，假设这些官方包未经修改；散装脚本等即使随原版安装，也可能保守地随图打包。already-packed 表示文件已在编译器写入的 BSP 中。
+
+解析警告需要结合构建输出检查。运行时拼出的脚本路径、自定义声音或粒子注册表、外部引擎实体，以及 BEE2 预编译生成的逻辑，都需要组件作者单独核对。对不能静态发现的资源，把文件和必需的注册内容按游戏相对路径放入地图的 assets 目录。最终以只有原版 Portal 2、只复制成品 BSP 的机器试玩验收。
+
+### 生成小房间样例
 
 示例使用整数 Hammer 单位，Z 轴向上。每个 world 条目通过两个角点定义一个长方体。components 定义可复用类型的实例，connections 通过组件 ID 和端口名连接两端。在新电脑上先安装 Python 3.12，再执行以下命令。
 

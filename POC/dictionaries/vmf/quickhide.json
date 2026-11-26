@@ -1,0 +1,16 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "count": 0
+    },
+    "foundry_srctools.vmf": {
+      "count": 0
+    }
+  },
+  "fields": {
+    "count": "快速隐藏计数"
+  },
+  "json_control": "srctools 在计数大于 0 时导出；chamber.json 无此配置。",
+  "purpose": "Hammer 快速隐藏操作对应的对象计数。",
+  "section": "quickhide"
+}

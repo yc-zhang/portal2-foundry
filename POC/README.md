@@ -2,6 +2,10 @@
 
 [实验日志 · 2026-11-25](logs/2026-11-25.md)
 
+[实验日志 · 2026-11-27](logs/2026-11-27.md) · [BEE2 包与物品字典](dictionaries/bee2.json) · [srctools 制图操作](docs/srctools-term-dictionary.md)
+
+[字典导航与更新方法](docs/resource-dictionary.md) · [材质](dictionaries/materials.json) · [组件](dictionaries/components.json) · [事件连线](dictionaries/connections.json) · [VMF 顶层区块](dictionaries/vmf/)
+
 今天用一间「方块压按钮开门」的测试室回答了两个问题：程序能否生成 Portal 2 接受的地图？编译通过后，还需要在游戏里验证什么？我们跑通了从描述生成地图的最小样例，并在另一张逐步扩建的测试室中验证了装备、传送门、机关和光照。正式设计与开发尚未开始。
 
 ![双传送门落在地板上，方块压住按钮后出口开启](media/portals-and-button.jpg)

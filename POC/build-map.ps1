@@ -23,17 +23,16 @@ function Invoke-Compiler([string] $Name, [string[]] $Arguments) {
     & (Join-Path $GameRoot "bin\$Name.exe") @Arguments
     if ($LASTEXITCODE -ne 0) { throw "$Name failed (exit $LASTEXITCODE). See $base.log" }
 }
-# Make map-specific resources visible to Hammer and the compilers. BSPZIP
-# uses the same files below so subscribers receive the matching versions.
+# Mount explicit assets for Hammer/VBSP. pack_map.py resolves runtime dependencies later.
 $assetRoot = Join-Path $source.DirectoryName "assets\$($source.BaseName)"
-$packList = @()
+$python = Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
+if (-not (Test-Path -LiteralPath $python)) { throw 'Create POC/.venv and install requirements.txt before building.' }
 if (Test-Path -LiteralPath $assetRoot -PathType Container) {
     foreach ($asset in Get-ChildItem -LiteralPath $assetRoot -File -Recurse) {
         $relative = $asset.FullName.Substring($assetRoot.Length + 1)
         $mounted = Join-Path $game $relative
         [IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($mounted)) | Out-Null
         Copy-Item -LiteralPath $asset.FullName -Destination $mounted
-        $packList += $relative.Replace('\', '/'), $asset.FullName
     }
 }
 Invoke-Compiler 'vbsp' @('-game', $game, $base)
@@ -42,13 +41,8 @@ if (-not (Test-Path -LiteralPath "$base.prt") -or (Test-Path -LiteralPath "$base
 }
 Invoke-Compiler 'vvis' @('-game', $game, $base)
 Invoke-Compiler 'vrad' @('-both', '-game', $game, $base)
-if ($packList.Count -gt 0) {
-    $listFile = Join-Path $stageDir 'packlist.txt'
-    [IO.File]::WriteAllLines($listFile, [string[]]$packList, [Text.UTF8Encoding]::new($false))
-    $env:VPROJECT = $game
-    Invoke-Compiler 'bspzip' @('-addlist', "$base.bsp", $listFile, "$base.packed.bsp")
-    Move-Item -LiteralPath "$base.packed.bsp" -Destination "$base.bsp" -Force
-}
+& $python (Join-Path $PSScriptRoot 'pack_map.py') "$base.bsp" $game $assetRoot
+if ($LASTEXITCODE -ne 0) { throw "Dependency packing failed. See $stageDir" }
 foreach ($extension in @('bsp', 'log')) {
     Copy-Item -LiteralPath "$base.$extension" -Destination (Join-Path $source.DirectoryName "$($source.BaseName).$extension")
 }

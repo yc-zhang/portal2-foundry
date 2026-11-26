@@ -1,0 +1,45 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "child_counts": {
+        "editor": 1,
+        "solid": 17
+      },
+      "count": 1,
+      "values": {
+        "classname": "worldspawn",
+        "id": "1",
+        "mapversion": "1",
+        "skyname": "sky_black_nofog"
+      }
+    },
+    "foundry_srctools.vmf": {
+      "child_counts": {
+        "editor": 1,
+        "solid": 9
+      },
+      "count": 1,
+      "values": {
+        "classname": "worldspawn",
+        "id": "1",
+        "mapversion": "1",
+        "skyname": "sky_black_nofog"
+      }
+    }
+  },
+  "fields": {
+    "classname": "worldspawn",
+    "editor": "Hammer 编辑状态",
+    "id": "对象编号",
+    "mapversion": "与 versioninfo.mapversion 对应",
+    "skyname": "天空盒名",
+    "solid.side.lightmapscale": "光照贴图采样间距",
+    "solid.side.material": "材质路径，见 ../materials.json",
+    "solid.side.plane": "确定面的三个点",
+    "solid.side.rotation": "贴图旋转",
+    "solid.side.uaxis / vaxis": "贴图轴、偏移与缩放"
+  },
+  "json_control": "world[].min/max 生成轴对齐长方体；material 引用材质别名。skyname 固定为 sky_black_nofog。",
+  "purpose": "worldspawn 定义地图全局属性，包含静态 brush 几何。",
+  "section": "world"
+}

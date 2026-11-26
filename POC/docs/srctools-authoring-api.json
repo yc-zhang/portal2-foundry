@@ -1,0 +1,969 @@
+{
+  "library": "srctools",
+  "version": "2.7.0",
+  "game": "Portal 2",
+  "scope": "关卡制作常用操作；参数 default 为 Python 表示形式。",
+  "operations": [
+    {
+      "api": "srctools.vmf.VMF",
+      "intent": "新建地图",
+      "scope": "VMF 文件根",
+      "parameters": [
+        {
+          "name": "map_info",
+          "type": "collections.abc.Mapping[str, str]",
+          "required": false,
+          "default": "srctools.EmptyMapping",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "preserve_ids",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "format_version",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "hammer_version",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "hammer_build",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "is_prefab",
+          "type": "Optional[bool]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "cordon_enabled",
+          "type": "Optional[bool]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "map_version",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "show_grid",
+          "type": "Optional[bool]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "show_3d_grid",
+          "type": "Optional[bool]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "snap_grid",
+          "type": "Optional[bool]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "show_logic_grid",
+          "type": "Optional[bool]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "grid_spacing",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "active_cam",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "quickhide_count",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "strata_inst_visibility",
+          "type": "Optional[srctools.vmf.StrataInstanceVisibility]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        }
+      ],
+      "returns": "srctools.vmf.VMF",
+      "usage": "format_version=100 对应本版支持的 VMF 格式。",
+      "verify": "生成后至少规划密封世界几何和可用出生点。"
+    },
+    {
+      "api": "srctools.vmf.VMF.parse",
+      "intent": "读取或复核地图",
+      "scope": "VMF 文件根",
+      "parameters": [
+        {
+          "name": "tree",
+          "type": "Union[srctools.keyvalues.Keyvalues, str]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "preserve_ids",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "VMF",
+      "usage": "tree 为文件路径字符串或已解析的 Keyvalues 树。",
+      "verify": "按名称找到预期实体，核对几何和输出。"
+    },
+    {
+      "api": "srctools.vmf.VMF.export",
+      "intent": "写出地图",
+      "scope": "VMF 文件根",
+      "parameters": [
+        {
+          "name": "dest_file",
+          "type": "Optional[srctools.types.FileWText]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "inc_version",
+          "type": "bool",
+          "required": false,
+          "default": "True",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "minimal",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "disp_multiblend",
+          "type": "bool",
+          "required": false,
+          "default": "True",
+          "kind": "keyword_only"
+        }
+      ],
+      "returns": "str (dest_file omitted) | None (stream supplied)",
+      "usage": "无流时返回文本，传入已打开的文本流则写入该流。inc_version 默认递增修订号。",
+      "verify": "用 VMF.parse 读回输出路径。"
+    },
+    {
+      "api": "srctools.vmf.VMF.make_hollow",
+      "intent": "制作密封房间外壳",
+      "scope": "world.solid",
+      "parameters": [
+        {
+          "name": "p1",
+          "type": "Union[srctools.math.Vec, srctools.math.FrozenVec]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "p2",
+          "type": "Union[srctools.math.Vec, srctools.math.FrozenVec]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "thick",
+          "type": "float",
+          "required": false,
+          "default": "16",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "mat",
+          "type": "str",
+          "required": false,
+          "default": "'tools/toolsnodraw'",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "inner_mat",
+          "type": "str",
+          "required": false,
+          "default": "''",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "list['Solid']",
+      "usage": "两个 Vec 表示室内净空的对角，thick 为向外的墙厚，单位 HU；inner_mat 默认沿用 mat。",
+      "verify": "返回六个 Solid；调用 add_brushes 将它们加入世界。"
+    },
+    {
+      "api": "srctools.vmf.VMF.make_prism",
+      "intent": "创建轴对齐长方体",
+      "scope": "world.solid 或 entity.solid",
+      "parameters": [
+        {
+          "name": "p1",
+          "type": "Union[srctools.math.Vec, srctools.math.FrozenVec]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "p2",
+          "type": "Union[srctools.math.Vec, srctools.math.FrozenVec]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "mat",
+          "type": "str",
+          "required": false,
+          "default": "'tools/toolsnodraw'",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "set_points",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.vmf.PrismFace",
+      "usage": "两个角的每一轴都须有非零跨度。mat 为材质路径。",
+      "verify": "返回 PrismFace；它的 solid 和六个具名面可分别访问。"
+    },
+    {
+      "api": "srctools.vmf.VMF.add_brushes",
+      "intent": "将多块静态几何加入世界",
+      "scope": "world.solid",
+      "parameters": [
+        {
+          "name": "brushes",
+          "type": "collections.abc.Iterable['Solid']",
+          "required": true,
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "None",
+      "usage": "接受 Solid 的可迭代对象。",
+      "verify": "核对 vmf.brushes 中的数量。"
+    },
+    {
+      "api": "srctools.vmf.VMF.add_brush",
+      "intent": "将单块静态几何加入世界",
+      "scope": "world.solid",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "Union[ForwardRef('Solid'), srctools.vmf.PrismFace]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "None",
+      "usage": "移动门或触发器的刷体应挂到实体 solids。",
+      "verify": "导出后检查 solid 所属区块。"
+    },
+    {
+      "api": "srctools.vmf.Solid",
+      "intent": "构造凸刷体",
+      "scope": "world.solid 或 entity.solid",
+      "parameters": [
+        {
+          "name": "map",
+          "type": "srctools.vmf.VMF",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "id",
+          "type": "int",
+          "required": false,
+          "default": "-1",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "sides",
+          "type": "list['Side']",
+          "required": false,
+          "default": "NOTHING",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "visgroup_ids",
+          "type": null,
+          "required": false,
+          "default": "()",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "hidden",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "group_id",
+          "type": "Optional[int]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "vis_shown",
+          "type": "bool",
+          "required": false,
+          "default": "True",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "vis_auto_shown",
+          "type": "bool",
+          "required": false,
+          "default": "True",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "is_cordon",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "editor_color",
+          "type": "srctools.math.Vec",
+          "required": false,
+          "default": "NOTHING",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.vmf.Solid",
+      "usage": "各 Side 的平面需要围成有体积的封闭凸体；凹形分块。",
+      "verify": "在 Hammer 检查轮廓，在 VBSP 日志检查无效刷体。"
+    },
+    {
+      "api": "srctools.vmf.Side",
+      "intent": "设置逐面几何和材质",
+      "scope": "solid.side",
+      "parameters": [
+        {
+          "name": "vmf_file",
+          "type": "srctools.vmf.VMF",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "planes",
+          "type": "list[srctools.math.Vec]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "des_id",
+          "type": "int",
+          "required": false,
+          "default": "-1",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "lightmap",
+          "type": "int",
+          "required": false,
+          "default": "16",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "smoothing",
+          "type": "int",
+          "required": false,
+          "default": "0",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "mat",
+          "type": "str",
+          "required": false,
+          "default": "'tools/toolsnodraw'",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "rotation",
+          "type": "float",
+          "required": false,
+          "default": "0",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "uaxis",
+          "type": "Optional[srctools.vmf.UVAxis]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "vaxis",
+          "type": "Optional[srctools.vmf.UVAxis]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "disp_power",
+          "type": "Literal[0, 1, 2, 3, 4]",
+          "required": false,
+          "default": "0",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.vmf.Side",
+      "usage": "planes 需要三个不共线的 Vec，顺序决定方向；mat 是单面的材质名。",
+      "verify": "各面的朝向与邻面应共同围成预期的实体。"
+    },
+    {
+      "api": "srctools.vmf.UVAxis",
+      "intent": "对齐表面纹理",
+      "scope": "side.uaxis / side.vaxis",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "float",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "y",
+          "type": "float",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "z",
+          "type": "float",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "offset",
+          "type": "float",
+          "required": false,
+          "default": "0.0",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "scale",
+          "type": "float",
+          "required": false,
+          "default": "0.25",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.vmf.UVAxis",
+      "usage": "方向三个分量、offset 和非零 scale；两轴共同定义贴图。",
+      "verify": "在 Hammer 的纹理视图核对接缝。"
+    },
+    {
+      "api": "srctools.vmf.Solid.copy",
+      "intent": "复制刷体",
+      "scope": "solid",
+      "parameters": [
+        {
+          "name": "des_id",
+          "type": "int",
+          "required": false,
+          "default": "-1",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "vmf_file",
+          "type": "Optional[srctools.vmf.VMF]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "side_mapping",
+          "type": "collections.abc.MutableMapping[int, int]",
+          "required": false,
+          "default": "srctools.EmptyMapping",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "keep_vis",
+          "type": "bool",
+          "required": false,
+          "default": "True",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "Solid",
+      "usage": "复制到其他 VMF 时传 vmf_file；可用 side_mapping 取得面 ID 对应关系。",
+      "verify": "将副本加入目标父对象，并更新依赖旧面 ID 的引用。"
+    },
+    {
+      "api": "srctools.vmf.Solid.localise",
+      "intent": "旋转并平移刷体",
+      "scope": "solid.side",
+      "parameters": [
+        {
+          "name": "origin",
+          "type": "Union[ForwardRef('VecBase'), ForwardRef('Vec_tuple'), tuple[float, float, float]]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "angles",
+          "type": "Union[ForwardRef('Angle'), ForwardRef('FrozenAngle'), ForwardRef('Matrix'), ForwardRef('FrozenMatrix'), NoneType]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "None",
+      "usage": "origin 以 HU 计，角度以度计。操作修改原对象。",
+      "verify": "核对变换后的包围盒与贴图方向。"
+    },
+    {
+      "api": "srctools.vmf.Solid.get_bbox",
+      "intent": "测量刷体边界",
+      "scope": "solid",
+      "parameters": [],
+      "returns": "tuple[srctools.math.Vec, srctools.math.Vec]",
+      "usage": "返回最小、最大坐标两个 Vec。",
+      "verify": "用于比较门板与门洞尺寸。"
+    },
+    {
+      "api": "srctools.vmf.make_overlay",
+      "intent": "创建覆盖贴花",
+      "scope": "entity (info_overlay)",
+      "parameters": [
+        {
+          "name": "vmf",
+          "type": "VMF",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "normal",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "origin",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "uax",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "vax",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "material",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "surfaces",
+          "type": "collections.abc.Iterable['Side']",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "u_repeat",
+          "type": "float",
+          "required": false,
+          "default": "1",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "v_repeat",
+          "type": "float",
+          "required": false,
+          "default": "1",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "swap",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "render_order",
+          "type": "int",
+          "required": false,
+          "default": "0",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "Entity",
+      "usage": "surfaces 传目标 Side；normal 是面法线，uax/vax 给出方向和跨度。该助手面向轴对齐表面。",
+      "verify": "读回 sides 引用，试玩确认贴花朝向。"
+    },
+    {
+      "api": "srctools.vmf.VMF.create_ent",
+      "intent": "创建点实体、刷体实体或实例",
+      "scope": "entity",
+      "parameters": [
+        {
+          "name": "classname",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "kargs",
+          "type": "ValidKVs",
+          "required": false,
+          "kind": "var_keyword"
+        }
+      ],
+      "returns": "Entity",
+      "usage": "classname 必填。其余关键字写作实体键值；模型、属性和端口以目标游戏定义为准。",
+      "verify": "实体自动注册；刷体实体还要附加 Solid。"
+    },
+    {
+      "api": "srctools.vmf.Entity.add_out",
+      "intent": "将一条或多条输出加入事件源",
+      "scope": "entity.connections",
+      "parameters": [
+        {
+          "name": "outputs",
+          "type": "Output",
+          "required": false,
+          "kind": "var_positional"
+        }
+      ],
+      "returns": "None",
+      "usage": "每条传一个 Output 对象。",
+      "verify": "从源实体的 outputs 读回，并检查目标。"
+    },
+    {
+      "api": "srctools.vmf.Output",
+      "intent": "配置事件连线",
+      "scope": "entity.connections",
+      "parameters": [
+        {
+          "name": "out",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "targ",
+          "type": "Union[srctools.vmf.Entity, str]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "inp",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "param",
+          "type": "ValidKVs",
+          "required": false,
+          "default": "''",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "delay",
+          "type": "float",
+          "required": false,
+          "default": "0.0",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "times",
+          "type": "int",
+          "required": false,
+          "default": "-1",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "only_once",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "inst_out",
+          "type": "Optional[str]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "inst_in",
+          "type": "Optional[str]",
+          "required": false,
+          "default": "None",
+          "kind": "keyword_only"
+        },
+        {
+          "name": "comma_sep",
+          "type": "bool",
+          "required": false,
+          "default": "False",
+          "kind": "keyword_only"
+        }
+      ],
+      "returns": "srctools.vmf.Output",
+      "usage": "delay 以秒计；times=-1 可重复，only_once=True 设为一次。省略 param 为无显式参数。",
+      "verify": "核对事件名、目标名、输入名、参数、延迟和次数。"
+    },
+    {
+      "api": "srctools.vmf.VMF.search",
+      "intent": "按名称寻找实体",
+      "scope": "entity.targetname 等",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "collections.abc.Iterator['Entity']",
+      "usage": "可用精确名称或该方法支持的通配匹配；单个名字可命中多个实体。",
+      "verify": "设计为单目标时核对恰有一个匹配。"
+    },
+    {
+      "api": "srctools.vmf.VMF.iter_inputs",
+      "intent": "查找指向目标名的已有输出",
+      "scope": "entity.connections",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "collections.abc.Iterator['Output']",
+      "usage": "name 传目标名称。",
+      "verify": "修改实体名时逐条检查连线。"
+    },
+    {
+      "api": "srctools.vmf.VMF.create_visgroup",
+      "intent": "建立编辑器可见性组",
+      "scope": "visgroups.visgroup",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "str",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "color",
+          "type": "Union[srctools.math.Vec, tuple[int, int, int]]",
+          "required": false,
+          "default": "(255, 255, 255)",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "VisGroup",
+      "usage": "返回 VisGroup，可将 id 加到对象的 visgroup_ids。",
+      "verify": "在 Hammer 可见性面板核对成员。"
+    },
+    {
+      "api": "srctools.vmf.Camera",
+      "intent": "保存编辑器观察点",
+      "scope": "cameras.camera",
+      "parameters": [
+        {
+          "name": "vmf_file",
+          "type": "srctools.vmf.VMF",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "pos",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "targ",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.vmf.Camera",
+      "usage": "pos 和 targ 是两个世界坐标。",
+      "verify": "在 Hammer 切换到保存的视角。"
+    },
+    {
+      "api": "srctools.vmf.Cordon",
+      "intent": "定义局部编译范围",
+      "scope": "cordons.cordon",
+      "parameters": [
+        {
+          "name": "vmf_file",
+          "type": "srctools.vmf.VMF",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "min_",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "max_",
+          "type": "srctools.math.Vec",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "is_active",
+          "type": "bool",
+          "required": false,
+          "default": "True",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "name",
+          "type": "str",
+          "required": false,
+          "default": "'Cordon'",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.vmf.Cordon",
+      "usage": "min_ / max_ 是边界角点。另有地图级 cordon_enabled。",
+      "verify": "核对 Hammer 当前启用的区域。"
+    },
+    {
+      "api": "srctools.bsp.BSP",
+      "intent": "读取成品地图",
+      "scope": "BSP 文件",
+      "parameters": [
+        {
+          "name": "filename",
+          "type": "Union[str, os.PathLike[str]]",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "version",
+          "type": "Union[srctools.bsp.VERSIONS, srctools.bsp.GameVersion, NoneType]",
+          "required": false,
+          "default": "None",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "srctools.bsp.BSP",
+      "usage": "传 BSP 路径；ents 提供实体，pakfile 提供内嵌 ZIP。",
+      "verify": "核对运行时实体、输出和已打包的资源。"
+    },
+    {
+      "api": "srctools.packlist.PackList.pack_from_bsp",
+      "intent": "收集已编译几何引用的资源",
+      "scope": "BSP 与资源清单",
+      "parameters": [
+        {
+          "name": "bsp",
+          "type": "srctools.bsp.BSP",
+          "required": true,
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "None",
+      "usage": "在已配置游戏搜索路径的 PackList 上调用。",
+      "verify": "再从实体补充依赖。"
+    },
+    {
+      "api": "srctools.packlist.PackList.pack_from_ents",
+      "intent": "收集实体引用的资源",
+      "scope": "BSP 实体与资源清单",
+      "parameters": [
+        {
+          "name": "vmf",
+          "type": "srctools.vmf.VMF",
+          "required": true,
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "mapname",
+          "type": "str",
+          "required": false,
+          "default": "''",
+          "kind": "positional_or_keyword"
+        },
+        {
+          "name": "tags",
+          "type": "collections.abc.Iterable[str]",
+          "required": false,
+          "default": "()",
+          "kind": "positional_or_keyword"
+        }
+      ],
+      "returns": "None",
+      "usage": "传入实体 VMF；Portal 2 可用 P2 标签筛选定义。",
+      "verify": "检查模型、声音等引用。"
+    },
+    {
+      "api": "srctools.packlist.PackList.eval_dependencies",
+      "intent": "展开间接资源依赖",
+      "scope": "资源清单",
+      "parameters": [],
+      "returns": "None",
+      "usage": "先收集地图引用、加载所需 manifest 并挂载资产。",
+      "verify": "检查缺失文件和依赖报告；动态生成的引用需要显式提供。"
+    }
+  ]
+}

@@ -1,0 +1,4312 @@
+{
+  "items": {
+    "BEE2_DESTRUCTION_TARGET": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_DESTRUCTION_TARGET",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "BEE2_HALF_OBS_ROOM": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_OBS_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "DOOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEEMOD_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_128X64X64": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_AUTOPORTAL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_PORTALS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BARRIER": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_BARRIER",
+      "origin": "extend"
+    },
+    "ITEM_BARRIER_HAZARD": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_HAZARDS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_BARRIER_HAZARD",
+      "origin": "extend"
+    },
+    "ITEM_BEE2_ANGLED_BLOCK": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_ANGLED_BLOCK_CORNER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_ANTIGEL_MARKER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_ANTLINE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_ANTLINES",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_BARRIER_HOLE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BARRIER_HOLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_BARRIER_VARIANTS": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BARRIER_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_BUMBLEBALL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BUMBLEBALL",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_CAMERA": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_MONITORS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_CATWALK": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_CATWALK",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_CONVEYOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_CONVEYOR",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_COOP_CHECKPOINT_SINGLE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_CHECKPOINT",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_COVERED_ANGLED_PANEL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_EXTRA_PANELS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_CUBE_COLORISER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_CUBE_COLORISER",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_CUTOUT_TILE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_FIZZLER_OUT_RELAY": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_FIZZLER_OUT_RELAY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ALL"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_FUTBOL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "PACK_BEE2_FUTBOL",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_HALF_BARRIER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BARRIER_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_HALF_WALL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_LIGHT_TILE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_LIGHT_TILES",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_LOGIC_DELAYER_STRIP": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_LOGIC_INPUTS_SR_STRIP": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_MONITOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_MONITORS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_NEUROTOXIN_TIMER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_NEUROTOXIN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_NEUROTOXIN_VENT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_NEUROTOXIN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_PAINT_FIZZLER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_PAINT_FIZZLER",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_PANEL_GLASS_DOOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_EXTRA_PANELS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_PARTIAL_FLAT_BLOCK": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_PORTALGUN": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_PORTALS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_QUARTER_TILE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_QUART_WALL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_ROCKET_TURRET": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_ROCKET_TURRET",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SCAFFOLD_PIST": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_UNST_SCAFFOLD",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SCAFFOLD_SLOT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_UNST_SCAFFOLD",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SCAFFOLD_WALL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_UNST_SCAFFOLD",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SIGNAGE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_SIGNAGE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SIGNAGE_ANTLINE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_SIGNAGE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SMALL_WINDOW": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_SPECIAL_MARKER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_STYLE_PREVIEW_SCREENSHOT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_STYLE_SCREENSHOTTER",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_TRIGGER_BUTTON": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_TRIGGER_BUTTON",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_TURRET_DROPPER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_TURRET_DROPPER",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE2_VACTUBE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_VACTUBES",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE_LOGIC": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "<LOGIC>"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BEE_LOGIC_STRIP": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "<LOGIC>"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_BUTTON_FLOOR": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_BUTTONS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_BUTTON_FLOOR",
+      "origin": "extend"
+    },
+    "ITEM_BUTTON_PEDESTAL": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_BUTTONS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_BUTTON_PEDESTAL",
+      "origin": "extend"
+    },
+    "ITEM_CATAPULT": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": "VER_DEFAULT",
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            },
+            {
+              "id": "VER_MECH",
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_TEST_ELEM",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_CATAPULT",
+      "origin": "extend"
+    },
+    "ITEM_COOP_ENTRY_DOOR": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "BEE2_CLEAN_STYLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_COOP_ENTRY_DOOR",
+      "origin": "extend"
+    },
+    "ITEM_COOP_EXIT_DOOR": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "BEE2_CLEAN_STYLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_COOP_EXIT_DOOR",
+      "origin": "extend"
+    },
+    "ITEM_CRUSHER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEEMOD_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1960s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_CUBE": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_TEST_ELEM",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_CUBE",
+      "origin": "extend"
+    },
+    "ITEM_DRAW_BRIDGE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEEMOD_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_ENTRY_DOOR": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "BEE2_CLEAN_STYLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_ENTRY_DOOR",
+      "origin": "extend"
+    },
+    "ITEM_EXIT_DOOR": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "BEE2_CLEAN_STYLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_EXIT_DOOR",
+      "origin": "extend"
+    },
+    "ITEM_FR_COMP_SMOKE_FIELD": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "FR_FIZZ",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_FR_FORCE_DEFLECTION_FIELD": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "FR_FIZZ",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_FR_MATTER_INQUISITION_FIELD": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "FR_FIZZ",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_GOO": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "VALVE_HAZARDS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY_STYLE"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_GOO",
+      "origin": "extend"
+    },
+    "ITEM_HIGH_ENERGY_PELLET_CATCHER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_PELLETS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_HIGH_ENERGY_PELLET_EMITTER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_PELLETS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_HIGH_ENERGY_PELLET_INF": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_PELLETS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_HMW_SENDIFICATOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "HMW_SENDIFICATOR",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_HMW_SENDIFICATOR_SLIM": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "HMW_SENDIFICATOR",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_INDICATOR_PANEL": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "BEE2_CLEAN_STYLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_INDICATOR_PANEL",
+      "origin": "extend"
+    },
+    "ITEM_INDICATOR_PANEL_TIMER": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_INDICATOR_PANEL_TIMER",
+      "origin": "extend"
+    },
+    "ITEM_INDICATOR_TOGGLE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_CORE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "UNSTYLED"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_INDICATOR_TOGGLE",
+      "origin": "extend"
+    },
+    "ITEM_KONCLAN_ANT_LASER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_ANTLINES",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LASER_CATCHER_CENTER": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_LASERS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_LASER_CATCHER_CENTER",
+      "origin": "extend"
+    },
+    "ITEM_LASER_EMITTER_CENTER": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_LASERS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_LASER_EMITTER_CENTER",
+      "origin": "extend"
+    },
+    "ITEM_LASER_RELAY_CENTER": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_LASERS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_LASER_RELAY_CENTER",
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_HALF_GRATE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BARRIER_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_PEDESTAL_BUTTONS": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_PEDESTAL_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_PROTRUDING_PEDESTAL": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_PEDESTAL_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_RECLINED_FIZZLER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "LAUTARO_STANDING_RECLINED_FIZZLERS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_STANDING_FIZZLER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "LAUTARO_STANDING_RECLINED_FIZZLERS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_UNEXPLOITABLE_SP_GRATES": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BARRIER_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LAUTARO_WORKING_COOP_GRATES": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BARRIER_VARIANTS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LIGHT_BRIDGE": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_TEST_ELEM",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_LIGHT_BRIDGE",
+      "origin": "extend"
+    },
+    "ITEM_LIGHT_PANEL": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_LIGHT_PANEL",
+      "origin": "extend"
+    },
+    "ITEM_LOGIC_GATE": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": "VER_EUROPEAN",
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            },
+            {
+              "id": "VER_GERMAN",
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            },
+            {
+              "id": "VER_TEXT",
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_LP_DEATH_FIZZLER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "LP_DEATH_FIZZ",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_OBSERVATION_ROOM": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": "VER_DEFAULT",
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            },
+            {
+              "id": "VER_REAL_OBS",
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "BEE2_CLEAN_STYLE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_OBSERVATION_ROOM",
+      "origin": "extend"
+    },
+    "ITEM_PAINT_SPLAT": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_TEST_ELEM",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PAINT_SPLAT",
+      "origin": "extend"
+    },
+    "ITEM_PAINT_SPLAT_REFLECTION": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "VALVE_TEST_ELEM",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_PANEL_ANGLED": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PANEL_ANGLED",
+      "origin": "extend"
+    },
+    "ITEM_PANEL_CLEAR": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PANEL_CLEAR",
+      "origin": "extend"
+    },
+    "ITEM_PANEL_FLIP": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PANEL_FLIP",
+      "origin": "extend"
+    },
+    "ITEM_PANEL_STAIRS": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PANEL_STAIRS",
+      "origin": "extend"
+    },
+    "ITEM_PHYS_SHIELD": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "PHYS_SHIELD",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_PISTON_PLATFORM": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PISTON_PLATFORM",
+      "origin": "extend"
+    },
+    "ITEM_PLACEMENT_HELPER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_CORE",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "UNSTYLED"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_PLACEMENT_HELPER",
+      "origin": "extend"
+    },
+    "ITEM_PORTAL_MAGNET": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "<LOGIC>"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_PRO_LIFEFORM_SENSOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "PRO_LIFEFORM_SENSOR",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_RAIL_PLATFORM": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_RAIL_PLATFORM",
+      "origin": "extend"
+    },
+    "ITEM_REX_CUBE_DEFLECTOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "REX_ITEMS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_REX_PELLET_DESTROYER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "REX_ITEMS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_REX_PELLET_FIELD": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "REX_FIELD",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_SAVEPOINT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "<LOGIC>"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_SECONDARY_OBSERVATION_ROOM": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": "VER_DEFAULT",
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_GEOMETRY",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_SECONDARY_OBSERVATION_ROOM",
+      "origin": "extend"
+    },
+    "ITEM_SQUARE_LIGHT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "HMW_MOD",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TAG_GUN_ACTIVATOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "APERTURE_TAG_ITEMS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TBEAM": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_TEST_ELEM",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_TBEAM",
+      "origin": "extend"
+    },
+    "ITEM_TDB_CSFI": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TDB_CSFI",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TRIGGERS": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "<LOGIC>"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_ANT_MAGNET": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_ANT_ROUTER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_BUTTON_PEDESTAL_RETRACT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_RET_BUTTON",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_BUTTON_RETRACT_FLOOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_RET_BUTTON",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_COOP_CHECKPOINT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_CHECKPOINT",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_COOP_CHECKPOINT_SEP": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_CHECKPOINT",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1960s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_DITCH": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_BLOCKS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_FLIP_FLOP": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_LOGIC_DELAYER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_LOGIC_INPUTS_SR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE_LOGIC",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "ANY"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_PAINT_CLEANER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_PAINT_CLEANER",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_PANEL_HALF_STATIC": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEE2_EXTRA_PANELS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TSPEN_SP_CHECKPOINT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TSPEN_CHECKPOINT",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1970s",
+                "BEE2_1980s",
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TULEBY_ABSOLUTE_FIZZLER": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TULEBY_ABSOLUTE_FIZZLER",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TULEBY_CUBE_BOMB": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TULEBY_CUBE_BOMB",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_OVERGROWN",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TULEBY_PORTALGUN_BUTTON": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "TULEBY_PORTALGUN_ON_OFF",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_TURRET": {
+      "declarations": [
+        {
+          "kind": "override",
+          "package": "BEE2_OLD_AP",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_OVERGROWN",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_OVERGROWN"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "override",
+          "package": "BEE2_PORTAL_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "package": "VALVE_HAZARDS",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": "ITEM_TURRET",
+      "origin": "extend"
+    },
+    "ITEM_VENT": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "BEEMOD_1",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_1950s",
+                "BEE2_PORTAL_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    },
+    "ITEM_WOM_CONDUCTOR": {
+      "declarations": [
+        {
+          "kind": "item",
+          "package": "PACK_WOM_CONDUCTOR",
+          "versions": [
+            {
+              "id": null,
+              "styles": [
+                "BEE2_CLEAN",
+                "BEE2_PORTAL_1",
+                "BEE2_1950s",
+                "BEE2_1980s"
+              ]
+            }
+          ]
+        }
+      ],
+      "native": false,
+      "native_editor_item": null,
+      "origin": "extend"
+    }
+  },
+  "packages": {
+    "APERTURE_TAG_ITEMS": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "apTag/tagItems/info.txt",
+      "name": "Aperture Tag Items",
+      "requires": []
+    },
+    "APERTURE_TAG_VOICE": {
+      "declared_objects": {
+        "QuotePack": 1
+      },
+      "manifest": "apTag/tagVO/info.txt",
+      "name": "Aperture Tag Voicelines",
+      "requires": []
+    },
+    "BEE2_ANTLINES": {
+      "declared_objects": {
+        "Item": 2
+      },
+      "manifest": "antlines/info.txt",
+      "name": "Antlines",
+      "requires": []
+    },
+    "BEE2_BARRIER_HOLE": {
+      "declared_objects": {
+        "BarrierHole": 5,
+        "Item": 1
+      },
+      "manifest": "barrier_hole/info.txt",
+      "name": "Barrier Hole",
+      "requires": []
+    },
+    "BEE2_BARRIER_VARIANTS": {
+      "declared_objects": {
+        "Item": 5
+      },
+      "manifest": "barrier_variants/info.txt",
+      "name": "Glass/Grating Variants",
+      "requires": []
+    },
+    "BEE2_BLOCKS": {
+      "declared_objects": {
+        "Item": 12,
+        "TransToken": 2
+      },
+      "manifest": "blocks/info.txt",
+      "name": "Block items",
+      "requires": []
+    },
+    "BEE2_BUMBLEBALL": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "bumbleball/info.txt",
+      "name": "BumbleBalls",
+      "requires": []
+    },
+    "BEE2_CATWALK": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "catwalk/info.txt",
+      "name": "Catwalk",
+      "requires": []
+    },
+    "BEE2_CLEAN_STYLE": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "CorridorGroup": 2,
+        "Item": 6,
+        "PlayerModel": 3,
+        "QuotePack": 1,
+        "SkyBox": 1,
+        "Style": 2
+      },
+      "manifest": "valve/clean_style/info.txt",
+      "name": "Clean Style",
+      "requires": [
+        "BEE2_CORE"
+      ]
+    },
+    "BEE2_CONVEYOR": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "conveyor/info.txt",
+      "name": "Conveyor",
+      "requires": []
+    },
+    "BEE2_CORE": {
+      "declared_objects": {
+        "Item": 2,
+        "PlayerModel": 1
+      },
+      "manifest": "core/info.txt",
+      "name": "Core Components",
+      "requires": []
+    },
+    "BEE2_CUBE_COLORISER": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 1
+      },
+      "manifest": "cube_color/info.txt",
+      "name": "Cube Coloriser",
+      "requires": []
+    },
+    "BEE2_DESTRUCTION_TARGET": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "destruction_target/info.txt",
+      "name": "Destruction Target",
+      "requires": []
+    },
+    "BEE2_ELEV_VIDEO": {
+      "declared_objects": {
+        "Elevator": 36
+      },
+      "manifest": "extra/elevator_videos/info.txt",
+      "name": "Elevator Videos",
+      "requires": []
+    },
+    "BEE2_EXTRA_PANELS": {
+      "declared_objects": {
+        "Item": 3
+      },
+      "manifest": "panels/info.txt",
+      "name": "Panel Items",
+      "requires": []
+    },
+    "BEE2_FIZZLER_OUT_RELAY": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "fizzler_out_relay/info.txt",
+      "name": "Fizzler Output Relay",
+      "requires": []
+    },
+    "BEE2_LIGHT_TILES": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "light_tiles/info.txt",
+      "name": "Light Tiles",
+      "requires": []
+    },
+    "BEE2_MONITORS": {
+      "declared_objects": {
+        "Item": 2
+      },
+      "manifest": "monitors/info.txt",
+      "name": "Monitors and Cameras",
+      "requires": []
+    },
+    "BEE2_NEUROTOXIN": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 2,
+        "TransToken": 1
+      },
+      "manifest": "neurotoxin/info.txt",
+      "name": "Neurotoxin",
+      "requires": []
+    },
+    "BEE2_OBS_VARIANTS": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "obs_variants/info.txt",
+      "name": "Observation Room Variants",
+      "requires": []
+    },
+    "BEE2_OLD_AP": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "CorridorGroup": 4,
+        "EditorSound": 6,
+        "QuotePack": 6,
+        "SkyBox": 2,
+        "Style": 4,
+        "StyleVPK": 3,
+        "StyleVar": 1
+      },
+      "manifest": "styles/oldAp/info.txt",
+      "name": "Old Aperture",
+      "requires": []
+    },
+    "BEE2_OVERGROWN": {
+      "declared_objects": {
+        "CorridorGroup": 1,
+        "QuotePack": 2,
+        "SkyBox": 1,
+        "Style": 1,
+        "StyleVPK": 1,
+        "StyleVar": 1
+      },
+      "manifest": "styles/overgrown/info.txt",
+      "name": "Overgrown Style",
+      "requires": []
+    },
+    "BEE2_PAINT_FIZZLER": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "paintFizzler/info.txt",
+      "name": "Paint Fizzler",
+      "requires": []
+    },
+    "BEE2_PEDESTAL_VARIANTS": {
+      "declared_objects": {
+        "Item": 2
+      },
+      "manifest": "pedestal_variants/info.txt",
+      "name": "Modified Pedestal Buttons",
+      "requires": []
+    },
+    "BEE2_PORTALS": {
+      "declared_objects": {
+        "Item": 2,
+        "Signage": 1
+      },
+      "manifest": "bee1/portal/info.txt",
+      "name": "Portal Spawners",
+      "requires": []
+    },
+    "BEE2_PORTAL_1": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "CorridorGroup": 1,
+        "PlayerModel": 1,
+        "QuotePack": 1,
+        "SkyBox": 1,
+        "Style": 1,
+        "StyleVPK": 1
+      },
+      "manifest": "styles/p1_style/info.txt",
+      "name": "Portal 1",
+      "requires": []
+    },
+    "BEE2_ROCKET_TURRET": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "rocketTurret/info.txt",
+      "name": "Rocket Turret",
+      "requires": []
+    },
+    "BEE2_SIGNAGE": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 2,
+        "Signage": 45,
+        "SignageLegend": 6
+      },
+      "manifest": "signage/info.txt",
+      "name": "Signage",
+      "requires": []
+    },
+    "BEE2_STYLE_SCREENSHOTTER": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "test/screenshotter/info.txt",
+      "name": "Preview Screenshotter",
+      "requires": []
+    },
+    "BEE2_TEST_PACKAGE": {
+      "declared_objects": {
+        "ConfigGroup": 1
+      },
+      "manifest": "test/test_unzipped/info.txt",
+      "name": "Test Package",
+      "requires": []
+    },
+    "BEE2_TRIGGER_BUTTON": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "trigger_button/info.txt",
+      "name": "Trigger Button",
+      "requires": []
+    },
+    "BEE2_TURRET_DROPPER": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "turret_dropper/info.txt",
+      "name": "Turret Dropper",
+      "requires": []
+    },
+    "BEE2_UNST_SCAFFOLD": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 3
+      },
+      "manifest": "scaffold/info.txt",
+      "name": "Unstationary Scaffold",
+      "requires": []
+    },
+    "BEE2_VACTUBES": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "vactubes/info.txt",
+      "name": "Vactubes",
+      "requires": []
+    },
+    "BEE2_VOICE_LINE": {
+      "declared_objects": {
+        "QuotePack": 1
+      },
+      "manifest": "extra/voice_line/info.txt",
+      "name": "Extra Voice Lines",
+      "requires": []
+    },
+    "BEEMOD_1": {
+      "declared_objects": {
+        "EditorSound": 2,
+        "Item": 4
+      },
+      "manifest": "bee1/beemod/info.txt",
+      "name": "BEEMOD 1",
+      "requires": []
+    },
+    "BEE_LOGIC": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 13
+      },
+      "manifest": "logic/info.txt",
+      "name": "BEEMOD LOGIC ITEMS",
+      "requires": []
+    },
+    "BEE_PELLETS": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "EditorSound": 5,
+        "Item": 3,
+        "Signage": 2
+      },
+      "manifest": "bee1/pellets/info.txt",
+      "name": "High Energy Pellets",
+      "requires": []
+    },
+    "FR_FIZZ": {
+      "declared_objects": {
+        "Item": 3
+      },
+      "manifest": "fr_fizzlers/info.txt",
+      "name": "ForthReaper's Fizzlers",
+      "requires": []
+    },
+    "HMW_MOD": {
+      "declared_objects": {
+        "Item": 1,
+        "Signage": 1
+      },
+      "manifest": "hmw/info.txt",
+      "name": "HMW's Pack",
+      "requires": []
+    },
+    "HMW_SENDIFICATOR": {
+      "declared_objects": {
+        "Item": 2,
+        "TransToken": 1
+      },
+      "manifest": "sendificator/info.txt",
+      "name": "Sendificator",
+      "requires": []
+    },
+    "LAUTARO_STANDING_RECLINED_FIZZLERS": {
+      "declared_objects": {
+        "Item": 2
+      },
+      "manifest": "standing_reclined_fizzlers/info.txt",
+      "name": "Custom Fizzler Layouts",
+      "requires": []
+    },
+    "LP_DEATH_FIZZ": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "deathfizzler/info.txt",
+      "name": "Death Fizzler",
+      "requires": [
+        "BEE_LOGIC"
+      ]
+    },
+    "PACK_BEE2_FUTBOL": {
+      "declared_objects": {
+        "EditorSound": 2,
+        "Item": 1
+      },
+      "manifest": "futbol/info.txt",
+      "name": "Futbol",
+      "requires": []
+    },
+    "PACK_WOM_CONDUCTOR": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "wom_plates/info.txt",
+      "name": "Conductive Plates",
+      "requires": []
+    },
+    "PHYS_SHIELD": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "phys_shield/info.txt",
+      "name": "Physics Repulsion Field",
+      "requires": []
+    },
+    "PRO_LIFEFORM_SENSOR": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "lifeform_sensor/info.txt",
+      "name": "Portal Pro Lifeform Sensor",
+      "requires": [
+        "BEE2_FIZZLER_OUT_RELAY"
+      ]
+    },
+    "REX_FIELD": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "rexaura/rex_fields/info.txt",
+      "name": "Rexaura Flux Fields",
+      "requires": [
+        "BEE2_FIZZLER_OUT_RELAY"
+      ]
+    },
+    "REX_ITEMS": {
+      "declared_objects": {
+        "EditorSound": 2,
+        "Item": 2,
+        "ItemConfig": 1
+      },
+      "manifest": "rexaura/rex_items/info.txt",
+      "name": "Rexaura Items",
+      "requires": [
+        "BEE_PELLETS"
+      ]
+    },
+    "TDB_CSFI": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "tdb_csfi/info.txt",
+      "name": "Closed Solid Field",
+      "requires": []
+    },
+    "TSPEN_CHECKPOINT": {
+      "declared_objects": {
+        "Item": 4
+      },
+      "manifest": "tspen/checkpoint/info.txt",
+      "name": "TSpen - Checkpoints",
+      "requires": []
+    },
+    "TSPEN_PAINT_CLEANER": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "tspen/cube_cleaner/info.txt",
+      "name": "TSpen - Paint Cleaner",
+      "requires": []
+    },
+    "TSPEN_RET_BUTTON": {
+      "declared_objects": {
+        "Item": 2
+      },
+      "manifest": "tspen/ret_button/info.txt",
+      "name": "TSpen - Retractable Button",
+      "requires": []
+    },
+    "TULEBY_ABSOLUTE_FIZZLER": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "tuleby/abs_fizz/info.txt",
+      "name": "Absolute Fizzler",
+      "requires": []
+    },
+    "TULEBY_CUBE_BOMB": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "tuleby/cube_bomb/info.txt",
+      "name": "Cube Bomb",
+      "requires": []
+    },
+    "TULEBY_PORTALGUN_ON_OFF": {
+      "declared_objects": {
+        "Item": 1
+      },
+      "manifest": "tuleby/portal_onoff/info.txt",
+      "name": "Portal Gun ON/OFF",
+      "requires": []
+    },
+    "VALVE_BUTTONS": {
+      "declared_objects": {
+        "Item": 2
+      },
+      "manifest": "valve/buttons/info.txt",
+      "name": "Buttons",
+      "requires": [
+        "BEE2_CLEAN_STYLE"
+      ]
+    },
+    "VALVE_GEOMETRY": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 9,
+        "TransToken": 2
+      },
+      "manifest": "valve/geometry/info.txt",
+      "name": "Test Chamber Parts",
+      "requires": [
+        "BEE2_CLEAN_STYLE"
+      ]
+    },
+    "VALVE_HAZARDS": {
+      "declared_objects": {
+        "ConfigGroup": 2,
+        "Item": 3
+      },
+      "manifest": "valve/hazards/info.txt",
+      "name": "Hazards",
+      "requires": [
+        "BEE2_CLEAN_STYLE"
+      ]
+    },
+    "VALVE_LASERS": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 3
+      },
+      "manifest": "valve/dis_beams/info.txt",
+      "name": "Discouragement Beams",
+      "requires": [
+        "BEE2_CLEAN_STYLE"
+      ]
+    },
+    "VALVE_MUSIC": {
+      "declared_objects": {
+        "Music": 53
+      },
+      "manifest": "valve/music/info.txt",
+      "name": "Valve Music",
+      "requires": []
+    },
+    "VALVE_TEST_ELEM": {
+      "declared_objects": {
+        "ConfigGroup": 1,
+        "Item": 6,
+        "PackList": 1
+      },
+      "manifest": "valve/test_elements/info.txt",
+      "name": "Test Elements",
+      "requires": [
+        "BEE2_CLEAN_STYLE"
+      ]
+    }
+  },
+  "upstream": {
+    "repository": "https://github.com/BEEmod/BEE2-items",
+    "revision": "09c8d97dd4633abf4472b9415ae66d567dc4eb12"
+  }
+}

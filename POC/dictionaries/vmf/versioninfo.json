@@ -1,0 +1,36 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "editorbuild": "5304",
+        "editorversion": "400",
+        "formatversion": "100",
+        "mapversion": "1",
+        "prefab": "0"
+      }
+    },
+    "foundry_srctools.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "editorbuild": "5304",
+        "editorversion": "400",
+        "formatversion": "100",
+        "mapversion": "1",
+        "prefab": "0"
+      }
+    }
+  },
+  "fields": {
+    "editorbuild": "编辑器构建号",
+    "editorversion": "编辑器版本",
+    "formatversion": "VMF 格式版本",
+    "mapversion": "地图修订号",
+    "prefab": "是否为预制件"
+  },
+  "json_control": "srctools 导出时填写。",
+  "purpose": "VMF 文件和编辑器版本信息。",
+  "section": "versioninfo"
+}

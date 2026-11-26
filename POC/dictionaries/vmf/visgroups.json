@@ -1,0 +1,23 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {}
+    },
+    "foundry_srctools.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {}
+    }
+  },
+  "fields": {
+    "visgroup.color": "编辑器颜色",
+    "visgroup.name": "组名",
+    "visgroup.visgroup": "嵌套分组",
+    "visgroup.visgroupid": "对象 editor 块引用的组 ID"
+  },
+  "json_control": "默认空分组；chamber.json 无此配置。",
+  "purpose": "在 Hammer 中分组显示或隐藏对象。",
+  "section": "visgroups"
+}

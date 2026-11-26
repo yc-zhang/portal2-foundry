@@ -12,6 +12,8 @@ TYPES = {
     "spawn": ("info_player_start", {"angles": "0 0 0"}),
     "light": ("light", {"_quadratic_attn": "1", "_linear_attn": "0", "_constant_attn": "0"}),
     "cube": ("prop_weighted_cube", {"model": "models/props/metal_box.mdl", "CubeType": "0", "NewSkins": "1", "PaintPower": "4"}),
+    "companion_cube": ("prop_weighted_cube", {"model": "models/props/metal_box.mdl", "CubeType": "1", "NewSkins": "1", "skin": "1", "PaintPower": "4"}),
+    "portal_gun": ("weapon_portalgun", {"CanFirePortal1": "1", "CanFirePortal2": "1"}),
     "floor_button": ("prop_floor_button", {"model": "models/props/portal_button.mdl"}),
     "lift_door": ("func_door", {"movedir": "-90 0 0", "speed": "160", "wait": "-1", "lip": "0"}),
     "finish_zone": ("trigger_once", {"spawnflags": "1"}),

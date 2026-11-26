@@ -1,0 +1,36 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "bShow3DGrid": "0",
+        "bShowGrid": "1",
+        "bShowLogicalGrid": "0",
+        "bSnapToGrid": "1",
+        "nGridSpacing": "64"
+      }
+    },
+    "foundry_srctools.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "bShow3DGrid": "0",
+        "bShowGrid": "1",
+        "bShowLogicalGrid": "0",
+        "bSnapToGrid": "1",
+        "nGridSpacing": "64"
+      }
+    }
+  },
+  "fields": {
+    "bShow3DGrid": "三维网格",
+    "bShowGrid": "二维网格",
+    "bShowLogicalGrid": "逻辑视图网格",
+    "bSnapToGrid": "网格吸附",
+    "nGridSpacing": "网格间距"
+  },
+  "json_control": "使用 srctools 默认值。",
+  "purpose": "Hammer 编辑视图的网格和吸附偏好。",
+  "section": "viewsettings"
+}

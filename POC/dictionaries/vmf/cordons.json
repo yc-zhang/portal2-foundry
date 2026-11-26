@@ -1,0 +1,28 @@
+{
+  "examples": {
+    "foundry_button.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "active": "0"
+      }
+    },
+    "foundry_srctools.vmf": {
+      "child_counts": {},
+      "count": 1,
+      "values": {
+        "active": "0"
+      }
+    }
+  },
+  "fields": {
+    "active": "全局开关",
+    "cordon.active": "单个范围开关",
+    "cordon.box.maxs": "边界最大角",
+    "cordon.box.mins": "边界最小角",
+    "cordon.name": "范围名"
+  },
+  "json_control": "默认关闭。",
+  "purpose": "Hammer 局部编译的空间范围。",
+  "section": "cordons"
+}
