@@ -1,0 +1,13 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Compiler intermediates and Hammer backups
+*.log
+*.prt
+*.lin
+*.vmx
+
+# Local migration records and original conversation archive
+/POC/local-archive/
