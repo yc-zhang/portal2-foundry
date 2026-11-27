@@ -6,10 +6,13 @@
 |---|---|
 | [materials.json](../dictionaries/materials.json) · [纯文本列表](../dictionaries/materials.txt) | 材质别名、VMF 材质路径、native 标记和来源。VPK 中的路径为 `materials/<键>.vmt`。 |
 | [components.json](../dictionaries/components.json) | JSON 支持的 chamber_types，以及 Hammer 实体、SDK 实例和 Puzzle Maker 物品。 |
+| [voices.json](../dictionaries/voices.json) | `recordings` 按游戏相对路径列出 `sound/vo/` 下的 WAV、MP3 录音及其来源。播放实体链接到组件定义和 I/O，工坊入场语音链接到 SDK 实例，BEE2 语音包链接到 `bee2.json` 的 `quote_packs`。 |
 | [bee2.json](../dictionaries/bee2.json) | BEE2 官方包与物品 ID；按 native_editor_item 查与原版物品的对应关系，按 declarations 查哪个包定义或覆盖了该物品。 |
 | [connections.json](../dictionaries/connections.json) | JSON 使用的 from、to、once，组件端口到 Source I/O 的映射，以及官方 FGD 中每个类直接声明的输入、输出和参数类型。查继承端口时沿 bases 查基类；同名声明分别保留来源。 |
 
 路径相对于 Steam 的 `steamapps/common/Portal 2/`，实例路径相对于 `sdk_content/maps/`。字段 `connections` 在 VMF 中位于实体内部。例如小房间中的 `plate.pressed → gate.open` 表示 plate 发出 OnPressed 后，向 gate 发送 Open。高级 VMF 连线还支持参数、延迟及触发次数；当前 JSON 只开放端点和 once。
+
+查原版录音时可搜索路径前缀，例如 `sound/vo/glados/`。索引涵盖基础游戏、数字编号 DLC、update 和 platform 中的 VPK 与散装文件。语言包目录、字幕文本和 VCD 场景内容另计。缺少基线记录的散装录音标为 `unverified`。BEE2 的 `quote_packs` 记录包清单中的角色、名称、配置文件标识和原始说明；例如 Nigel 的说明限定在 Aperture Tag 中使用。当前 chamber JSON 尚无可放置的旁白预设。
 
 ## Portal 2 VMF 顶层区块
 

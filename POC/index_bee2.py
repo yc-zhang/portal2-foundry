@@ -16,6 +16,7 @@ def build(packages_dir, components):
         raise ValueError("Supply components.json generated from a clean stock editoritems reference.")
     packages = {}
     items = {}
+    quote_packs = {}
     for manifest in sorted(packages_dir.rglob("info.txt")):
         source = manifest.relative_to(packages_dir).as_posix()
         tree = Keyvalues.parse(manifest.read_text(encoding="utf-8-sig"), source)
@@ -29,6 +30,15 @@ def build(packages_dir, components):
                                              if node.has_children() and node.name not in {"desc", "prerequisites", "overrides"})),
         }
         for parent in [tree, *tree.find_all("Overrides")]:
+            for quote in parent.find_all("QuotePack"):
+                entry = quote_packs.setdefault(quote["ID"].upper(), {
+                    "origin": "extend", "native": False, "declarations": [],
+                })
+                details = {key: quote[key] for key in ("name", "characters", "file", "description") if key in quote}
+                entry["declarations"].append({
+                    "package": package, "manifest": source,
+                    "kind": "quote_pack" if parent is tree else "override", **details,
+                })
             for item in parent.find_all("Item"):
                 name = item["ID"].upper()
                 entry = items.setdefault(name, {
@@ -48,7 +58,7 @@ def build(packages_dir, components):
                 })
     if not packages or not items:
         raise ValueError("No BEE2 package items found in this checkout.")
-    return {"packages": packages, "items": items}
+    return {"packages": packages, "items": items, "quote_packs": quote_packs}
 
 
 if __name__ == "__main__":

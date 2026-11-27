@@ -4305,6 +4305,188 @@
       ]
     }
   },
+  "quote_packs": {
+    "APERTURE_TAG_NIGEL": {
+      "declarations": [
+        {
+          "characters": "Nigel",
+          "description": "Nigel guiding players through chambers. This only works in Aperture Tag.",
+          "file": "nigel",
+          "kind": "quote_pack",
+          "manifest": "apTag/tagVO/info.txt",
+          "name": "Nigel (Aperture Tag)",
+          "package": "APERTURE_TAG_VOICE"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_ANNOUNCER_APOC": {
+      "declarations": [
+        {
+          "characters": "Announcer",
+          "description": "The Announcer guiding you through destroyed and wrecked chambers.",
+          "file": "announcer_apoc",
+          "kind": "quote_pack",
+          "manifest": "styles/overgrown/info.txt",
+          "name": "Announcer (Apocalypse)",
+          "package": "BEE2_OVERGROWN"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_CAROLINE_80S": {
+      "declarations": [
+        {
+          "characters": "Caroline",
+          "description": "Due to Cave's sickness, Caroline sometimes supervises tests instead. This quote pack is relatively sparse due to the limited number of Caroline lines.",
+          "file": "caroline_80s",
+          "kind": "quote_pack",
+          "manifest": "styles/oldAp/info.txt",
+          "name": "Caroline (80s)",
+          "package": "BEE2_OLD_AP"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_CAVE_50S": {
+      "declarations": [
+        {
+          "characters": "Cave Johnson",
+          "description": "Aperture's best times, just after founding. Cave is testing on _Astronauts_, _War Heroes_ and _Olympians_, focused mainly on Repulsion Gel.",
+          "file": "cave_50s",
+          "kind": "quote_pack",
+          "manifest": "styles/oldAp/info.txt",
+          "name": "Cave Johnson (50s)",
+          "package": "BEE2_OLD_AP"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_CAVE_60S": {
+      "declarations": [
+        {
+          "characters": "Cave Johnson",
+          "description": "In this era, all chambers were sealed off, and Cave's lines mention a variety of different dangerous experiments that were conducted. They still test _Astronauts_, _War Heroes_ and _Olympians_ in this era.",
+          "file": "cave_60s",
+          "kind": "quote_pack",
+          "manifest": "styles/oldAp/info.txt",
+          "name": "Cave Johnson (60s)",
+          "package": "BEE2_OLD_AP"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_CAVE_70S": {
+      "declarations": [
+        {
+          "characters": "Cave Johnson, Caroline",
+          "description": "Due to monetary issues Aperture has been forced to test on homeless people, promising 60 dollars for completing a test. Caroline sometimes appears in recordings.",
+          "file": "cave_70s",
+          "kind": "quote_pack",
+          "manifest": "styles/oldAp/info.txt",
+          "name": "Cave Johnson (70s)",
+          "package": "BEE2_OLD_AP"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_CAVE_80S": {
+      "declarations": [
+        {
+          "characters": "Cave Johnson",
+          "description": "After working heavily with moon rocks in the creation of Conversion Gel, Cave is deathly ill. Aperture has resorted to forcing employees to test.",
+          "file": "cave_80s",
+          "kind": "quote_pack",
+          "manifest": "styles/oldAp/info.txt",
+          "name": "Cave Johnson (80s)",
+          "package": "BEE2_OLD_AP"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_GLADOS_APOC": {
+      "declarations": [
+        {
+          "characters": "GLaDOS",
+          "description": "Pre-recorded GLaDOS guiding you through destroyed and wrecked chambers. This is an unused variant of the Announcer's lines, where GLaDOS played the role of this character.",
+          "file": "glados_apoc",
+          "kind": "quote_pack",
+          "manifest": "styles/overgrown/info.txt",
+          "name": "GLaDOS (Apocalypse)",
+          "package": "BEE2_OVERGROWN"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_GLADOS_CLEAN": {
+      "declarations": [
+        {
+          "characters": "GLaDOS",
+          "description": "GLaDOS narrating test subject's trips through fully-modern and pristine test environments.",
+          "file": "clean",
+          "kind": "quote_pack",
+          "manifest": "valve/clean_style/info.txt",
+          "name": "GLaDOS (Clean)",
+          "package": "BEE2_CLEAN_STYLE"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_GLADOS_HUMAN_VAULT": {
+      "declarations": [
+        {
+          "characters": "GLaDOS",
+          "description": "GLaDOS lines from the Coop Gel course. GLaDOS talks about freeing humans and reaching the vault door.",
+          "file": "glados_vault",
+          "kind": "quote_pack",
+          "manifest": "styles/oldAp/info.txt",
+          "name": "GLaDOS (Human Vault)",
+          "package": "BEE2_OLD_AP"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_GLADOS_P1": {
+      "declarations": [
+        {
+          "characters": "GLaDOS",
+          "description": "GLaDOS with adjusted audio intended for Portal 1 chambers.",
+          "file": "p1_glados",
+          "kind": "quote_pack",
+          "manifest": "styles/p1_style/info.txt",
+          "name": "GLaDOS (Portal 1 Chambers)",
+          "package": "BEE2_PORTAL_1"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    },
+    "BEE2_WHEATLEY": {
+      "declarations": [
+        {
+          "characters": "Wheatley",
+          "description": "Wheatley attempting to push you through test chambers.",
+          "file": "wheatley",
+          "kind": "quote_pack",
+          "manifest": "extra/voice_line/info.txt",
+          "name": "Wheatley",
+          "package": "BEE2_VOICE_LINE"
+        }
+      ],
+      "native": false,
+      "origin": "extend"
+    }
+  },
   "upstream": {
     "repository": "https://github.com/BEEmod/BEE2-items",
     "revision": "09c8d97dd4633abf4472b9415ae66d567dc4eb12"

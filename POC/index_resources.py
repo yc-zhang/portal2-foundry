@@ -32,7 +32,10 @@ class Provenance:
         return "native" if digest == expected else "unverified"
 
     def classify(self, paths):
-        sources = {path: self.source(path) for path in paths}
+        return self.classify_sources({path: self.source(path) for path in paths})
+
+    @staticmethod
+    def classify_sources(sources):
         origins = set(sources.values())
         if not sources:
             return {"native": None, "origin": "unverified", "sources": {}}
@@ -41,12 +44,15 @@ class Provenance:
                 "origin": origin, "sources": sources}
 
 
-def materials(root):
-    found = defaultdict(list)
+def content_directories(root):
     folders = ["portal2", "update", "platform"]
     folders += sorted(p.name for p in root.glob("portal2_dlc*") if re.fullmatch(r"portal2_dlc\d+", p.name))
-    for folder in folders:
-        directory = root / folder
+    return [root / folder for folder in folders]
+
+
+def materials(root):
+    found = defaultdict(list)
+    for directory in content_directories(root):
         for archive in sorted(directory.glob("*_dir.vpk")):
             for name in VPK(archive).filenames(ext="vmt"):
                 name = name.lower().replace("\\", "/")
@@ -56,6 +62,41 @@ def materials(root):
             name = file.relative_to(directory / "materials").with_suffix("").as_posix().lower()
             found[name].append(file.relative_to(root).as_posix())
     return found
+
+
+def voice_catalog(root, prov, components):
+    sources = defaultdict(list)
+    for directory in content_directories(root):
+        for archive in sorted(directory.glob("*_dir.vpk")):
+            source = archive.relative_to(root).as_posix()
+            for entry in VPK(archive).fileinfos(folder="sound/vo"):
+                name = entry.filename.lower()
+                if name.startswith("sound/vo/") and name.endswith((".wav", ".mp3")):
+                    sources[name].append(source)
+        for file in sorted((directory / "sound/vo").rglob("*")):
+            if file.is_file() and file.suffix.lower() in {".wav", ".mp3"}:
+                sources[file.relative_to(directory).as_posix().lower()].append(file.relative_to(root).as_posix())
+
+    recordings = {}
+    for name, paths in sources.items():
+        # The Steam baseline does not inventory loose VO files in full.
+        recordings[name] = prov.classify_sources({
+            path: "unverified" if path.lower().endswith((".wav", ".mp3")) and path.lower() not in prov.baseline["files"]
+            else prov.source(path) for path in paths
+        })
+
+    entities = ("ambient_generic", "logic_choreographed_scene")
+    pti = "instances/p2editor/global_pti_ents.vmf"
+    return {
+        "recordings": recordings,
+        "playback_entities": {name: {"definition": f"components.json#/hammer_entities/{name}",
+                                     "io": f"connections.json#/fgd_declarations/{name}"}
+                              for name in entities if name in components["hammer_entities"]},
+        "instances": {pti: {"catalog": "components.json", "section": "instances",
+                            "fixup": "$disable_pti_audio", "enabled_value": "0"}
+                      } if pti in components["instances"] else {},
+        "bee2_quote_packs": "bee2.json#/quote_packs",
+    }
 
 
 def fgd_catalogs(root, provenance):
@@ -152,6 +193,7 @@ def component_catalog(root, prov, entities):
         recipes[name] = entry
     return {
         "reference_depots": prov.baseline["depots"],
+        "related_catalogs": {"voices": "voices.json"},
         "chamber_types": recipes, "editor_items": items, "instances": instances,
         "hammer_entities": {k: {**prov.classify([d["source"] for d in defs]), "definitions": defs}
                            for k, defs in entities.items()},
@@ -192,6 +234,7 @@ def export_catalogs(root, directory, material_path):
     entities, ports = fgd_catalogs(root, prov)
     components = component_catalog(root, prov, entities)
     write_json(directory / "components.json", components)
+    write_json(directory / "voices.json", voice_catalog(root, prov, components))
     endpoints = {name: {k: recipe[k] for k in ("classname", "inputs", "outputs", "native", "origin")}
                  for name, recipe in components["chamber_types"].items() if recipe["inputs"] or recipe["outputs"]}
     write_json(directory / "connections.json", {
